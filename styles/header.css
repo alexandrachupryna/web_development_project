@@ -1,0 +1,240 @@
+header {
+    height: 776px;
+    background-image: url("../images/Rectangle\ 1.png"), url("../images/pexels-photo-356056.png"); 
+    background-blend-mode: overlay;
+    background-position: center, top;
+    width: 100%;
+    max-width: 100%;
+}
+
+.toolbar {
+    height: 20px;
+    padding: 50px 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: #ffffff;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+header .container {
+    width: 1170px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 95%;
+}
+
+nav {
+    width: 658px;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: sub;
+}
+
+.nav_list {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.nav_item, .search_form {
+    display: inline-block;
+}
+
+.nav_link:hover {
+    color:#00897b;
+}
+
+.nav_link:after {
+    background-color: #00897b;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.nav_link:hover:after,
+.nav_link:focus:after {
+    width: 100%;
+}
+
+.search_btn {
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.fa-search, .fa-bars {
+    font-size: 20px;
+    text-align: right;
+    display: inline-block;
+    margin-left: 28px;
+}
+
+.fas.fa-bars, .invisble {
+    display: none;
+}
+
+.search_visible {
+    display: inline-block;
+    height: 23px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 0px;
+    -webkit-animation: search_width 1s ease-in-out forwards;
+            animation: search_width 1s ease-in-out forwards;
+}
+
+@-webkit-keyframes search_width {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 250px;
+    }
+}
+
+@keyframes search_width {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 250px;
+    }
+}
+
+#menu_button {
+    background: #ffffff;
+}
+
+.menu_visible {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 124px;
+    height: 0px;
+    -webkit-animation: menu_height 2s linear forwards;
+            animation: menu_height 2s linear forwards;
+}
+
+@-webkit-keyframes menu_height {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 250px;
+    }
+}
+
+@keyframes menu_height {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 250px;
+    }
+}
+
+.list_visible {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+.li_visible {
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid black;
+    width: 80%;
+}
+
+.li_visible:hover {
+    background: #00897b;
+    color: #ffffff;
+}
+
+.header_div {
+    color: #ffffff;
+}
+
+.header_p{
+    font-size: 22px;
+}
+
+.buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 107px;
+    margin-bottom: 100px;
+}
+
+.header_button{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    display: block;
+    width: 220px;
+    height: 70px;
+    border: 3px solid #f8f8f8;
+    text-transform: uppercase;
+    vertical-align: middle;
+    line-height: 70px;
+    margin-right: 33px;
+}
+
+.header_button:hover {
+    background-color: #00897b;
+    border: none;
+    border: 3px solid #00897b;
+    transition: background-color 1s linear;
+}
+
+.fa-chevron-down {
+    font-size: 25px;
+    color: #ffffff;
+    margin: 0 auto;
+    display: block;
+}
+
+.down_bar {
+    display: block;
+}
+
+.header_text {
+    margin-top: 195px;
+}
+
+.search_visible {
+    display: inline-block;
+    height: 23px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid black;
+    width: 0px;
+    margin-left: 15px;
+    -webkit-animation: search_width 1s linear forwards;
+            animation: search_width 1s linear forwards;
+}

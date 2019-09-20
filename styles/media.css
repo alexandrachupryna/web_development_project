@@ -1,0 +1,179 @@
+@media (max-width: 1200px) {
+    .search_visible {
+        position: absolute;
+        right: 35px;
+        top: 122px;
+        background: white;
+        height: 30px;
+    }
+
+    @keyframes search_width {
+        from {
+          width: 0px;
+        }
+        to {
+          width: 300px;
+        }
+    }
+
+    .services_item {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 900px) {
+    nav{
+        display: none;
+    }
+
+    .fas.fa-bars {
+        display: inline-block;
+    }
+
+    .header_text {
+        margin-top: 120px;
+    }
+
+    .header_div h1 {
+        line-height: 56px;
+    }
+
+    .design {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    
+    .design_item {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .design p {
+        width: auto;
+    }
+
+    .about, .services {
+        height: auto;
+    }
+
+    .services_item {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .services_list p {
+        width: 90%;
+    }
+
+    .contact {
+        background: #212121;
+    }
+
+    .contact .container textarea, .contact #input_email, .contact #input_name  {
+        width: 91%;
+        max-width: 91%;
+    }
+
+    #input_submit {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .address {
+        max-width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .address_item p {
+        margin: 30px auto;
+    }
+
+    .contact {
+        height: auto;
+        padding-bottom: 200px;
+    }
+
+    .search_visible {
+        position: static;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .header_div h1 {
+        font-size: 44px;
+    }
+
+    .header_text {
+        margin-top: 80px;
+    }
+
+    .buttons {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .buttons a {
+        margin: 0 auto 20px;
+        width: 80%;
+    }
+
+    .main_text {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .design {
+        padding-top: 100px;
+    }
+
+    .services {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .services_list {
+        margin-top: 100px;
+        max-width: 95%;
+    }
+    
+    .services_item {
+        margin: 15px auto;
+    }
+
+    .team {
+        padding: 80px 0;
+    }
+
+    .main_text {
+        margin: 0 auto 110px;
+    }
+
+    h2 {
+        line-height: 30px;
+    }
+
+    .contact .container textarea, .contact #input_email, .contact #input_name {
+        max-width: 83%;
+        float: none;
+    }
+
+    .search_visible {
+        position: absolute;
+        top: 80px;
+    }
+
+    .menu_visible {
+        max-width: 100%;
+        right: 0;
+    }
+}
